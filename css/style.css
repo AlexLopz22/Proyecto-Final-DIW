@@ -1,0 +1,43 @@
+:root{
+    --color-principal: #252A30;
+    --color-secundario: #7BBB5D;
+    --font-normal: 24px;
+}
+html, body{
+    margin: 0;
+    font-family: "Inter", serif;
+    height: 100%;
+}
+.header{
+    display: flex;
+    background-color: var(--color-principal);
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 15%;
+}
+.logo img{
+    height: 100%;
+}
+.enlaces{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.enlace a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: var(--font-normal);
+}
+.acceso{
+    display: flex;
+    align-items: center;
+}
+.boton-acceder{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--color-secundario);
+    font-size: var(--font-normal);
+}
