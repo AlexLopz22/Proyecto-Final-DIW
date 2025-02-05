@@ -1,12 +1,20 @@
 :root{
     --color-principal: #252A30;
     --color-secundario: #7BBB5D;
-    --font-normal: 24px;
+    --color-terceario: #4A525C;
+    --color-cuaternario: #6E7784;
+    --color-blanco: #D9D9D9;
+    --font-enorme: 32px;
+    --font-grande: 24px;
+    --font-normal: 20px;
+    --font-pequeño: 16px;
+    --font-enano: 12px;
 }
 html, body{
     margin: 0;
     font-family: "Inter", serif;
     height: 100%;
+    background-color: var(--color-principal);
 }
 .header{
     display: flex;
@@ -15,6 +23,7 @@ html, body{
     padding-left: 5%;
     padding-right: 5%;
     height: 15%;
+    min-height: 100px;
 }
 .logo img{
     height: 100%;
@@ -40,4 +49,73 @@ html, body{
     border: 0;
     background-color: var(--color-secundario);
     font-size: var(--font-normal);
+}
+.contenedor-principal {
+    position: relative;
+    display: inline-block;
+    height: 85%;
+    overflow: hidden;
+    width: 100%;
+}
+.contenedor-principal .imagen-fondo{
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    height: 100%;
+}
+.contenido-principal {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: var(--color-secundario);
+    font-size: var(--font-enorme);
+    text-align: center;
+    background-color: var(--color-principal);
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 50px;
+    width: 250px;
+}
+.footer{
+    display: flex;
+    background-color: var(--color-principal);
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100px;
+    color: var(--color-secundario);
+    font-size: var(--font-pequeño);
+}
+.redes{
+    width: 200px;
+    text-align: center;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.red{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-secundario);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    display: flex;
+}
+.red img{
+    width: 25px;
+    height: 25px;
+}
+.titulo-footer{
+    font-size: var(--font-normal);
+}
+.redes p{
+    margin: 5px;
+}
+.redes hr{
+    border: 1px solid var(--color-secundario);
 }
