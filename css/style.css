@@ -269,7 +269,6 @@ html, body{
 }
 
 .card-apuesta{
-    width: 400px;
     color: var(--color-principal);
     background-color: var(--color-blanco);
     font-size: var(--font-grande);
