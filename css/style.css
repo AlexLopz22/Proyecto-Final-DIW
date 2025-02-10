@@ -1,6 +1,7 @@
 :root{
     --color-principal: #252A30;
     --color-secundario: #7BBB5D;
+    --color-secundario-oscuro: #72995f;
     --color-terceario: #4A525C;
     --color-cuaternario: #6E7784;
     --color-blanco: #D9D9D9;
@@ -12,8 +13,8 @@
 }
 html, body{
     margin: 0;
+    min-height: 100vh;
     font-family: "Inter", serif;
-    height: 100%;
     background-color: var(--color-principal);
 }
 /*Estilos header principal*/
@@ -23,7 +24,7 @@ html, body{
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
-    height: 15%;
+    height: 15vh;
     min-height: 100px;
 }
 .logo img{
@@ -37,6 +38,11 @@ html, body{
 }
 .enlace a{
     color: var(--color-secundario);
+    text-decoration: none;
+    font-size: var(--font-normal);
+}
+.enlace-activo a{
+    color: var(--color-secundario-oscuro);
     text-decoration: none;
     font-size: var(--font-normal);
 }
@@ -93,15 +99,11 @@ html, body{
     justify-content: center; 
     align-items: center; 
 }
-
 .boton-unirse a {
     text-decoration: none;
     color: var(--color-blanco);
     display: inline-block; /* Permite que el enlace se ajuste al contenido */
 }
-
-
-
 .logo-acceso{
     width: 100px;
 }
@@ -110,8 +112,7 @@ html, body{
 .contenedor-principal {
     position: relative;
     display: inline-block;
-    height: 85%;
-    overflow: hidden;
+    height: 85vh;
     width: 100%;
 }
 .contenedor-principal .imagen-fondo{
@@ -212,25 +213,25 @@ html, body{
 /*Estilos pagina Apuestas*/
 .contenido-apuestas{
     display: flex;
+    flex-grow: 1;
     color: var(--color-secundario);
-    height: 100%;
 }
 .sidebar-apuestas{
     width: 20%;
     background-color: var(--color-terceario);
-    height: 100%;
 }
 .sidebar-apuestas h2{
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: 10%;
     font-size: var(--font-grande);
 }
 .lista-apuestas{
     list-style-type: none;
     align-items: center;
+    padding-left: 10%;
 }
 .lista-apuestas li{
-    padding: 5px;
+    padding: 4px;
     display: flex;
     align-items: center;
 }
@@ -250,9 +251,9 @@ html, body{
     width: 95%;
     height: 90%; 
     padding: 10px;
-    overflow: auto; 
 }
 .grid-apuestas{
+    min-width: 350px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -272,6 +273,7 @@ html, body{
     color: var(--color-principal);
     background-color: var(--color-blanco);
     font-size: var(--font-grande);
+    width: 100%;
 }
 .card-apuesta div{
     margin-top: 10px;
@@ -296,10 +298,9 @@ html, body{
     width: 50px;
 }
 .boton-apuesta{
-    padding-right: 120px;
-    padding-left: 120px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
-
 
 /*Estilos footer*/
 .footer{
@@ -343,4 +344,25 @@ html, body{
 }
 .redes hr{
     border: 1px solid var(--color-secundario);
+}
+
+@media (max-width:1300px) {
+    .grid-apuestas{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .card-apuesta:nth-child(2n+1) {
+        justify-self: center;
+    }
+    .card-apuesta:nth-child(2n+2) {
+        justify-self: center;
+    }
+    .lista-apuestas{
+        padding-left: 5%;
+    }
+}
+@media (max-width:1000px){
+    .sidebar-apuestas{
+        display: none;
+    }
 }
