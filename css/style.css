@@ -60,6 +60,28 @@ html, body{
     text-decoration: none;
     color: var(--color-principal);
 }
+.acceder-acceso{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.boton-acceder2{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--color-principal);
+    font-size: var(--font-normal);
+    width: 75px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.boton-acceder2 a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-secundario);
+}
 .logo-acceso{
     width: 100px;
 }
@@ -103,10 +125,12 @@ html, body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: var(--color-principal);
+    font-size: var(--font-normal);
 }
 .contenedor-acceso{
     width: 50%;
-    height: 60%;
+    height: 80%;
     background-color: var(--color-secundario);
     display: flex;
     border-radius: 25px;
@@ -114,6 +138,7 @@ html, body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 450px;
 }
 .contenido-acceso{
     width: 80%;
@@ -122,18 +147,44 @@ html, body{
 .header-acceso {
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center; 
 }
-
-.header-acceso div {
-    text-align: center;
+.titulo-acceso {
     font-size: var(--font-grande);
+}
+.contenido-acceso div{ 
+    text-align: left;
+}
+.contenido-acceso div input{
+    background-color: var(--color-blanco);
+    border: 0;
+    width: 99%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.contenido-acceso hr{
+    border: 0.5px solid var(--color-principal);
+    margin-bottom: 20px;
+}
+.registro-acceso{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.inicio-acceso{
+    margin-top: 20px;
+    font-size: var(--font-pequeño);
+    display: flex;
+    justify-content: center;
+}
+.inicio-acceso a{
+    text-decoration: none;
     color: var(--color-principal);
 }
-.sesion {
-    display: block;
-    text-align: center; /* Opcional: centra "Sesión" */
+.inicio-acceso a:hover{
+    text-decoration: underline;
 }
 
 
