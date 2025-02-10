@@ -60,6 +60,26 @@ html, body{
     text-decoration: none;
     color: var(--color-principal);
 }
+.boton-unirse {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+    width: 100px;
+    background-color: var(--color-secundario);
+    font-size: var(--font-normal);
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.boton-unirse a {
+    text-decoration: none;
+    color: var(--color-blanco);
+    display: inline-block; /* Permite que el enlace se ajuste al contenido */
+}
+
+
+
 .logo-acceso{
     width: 100px;
 }
@@ -125,7 +145,6 @@ html, body{
     justify-content: center;
     align-items: center; 
 }
-
 .header-acceso div {
     text-align: center;
     font-size: var(--font-grande);
@@ -134,6 +153,99 @@ html, body{
 .sesion {
     display: block;
     text-align: center; /* Opcional: centra "Sesión" */
+}
+
+
+/*Estilos pagina Apuestas*/
+.contenido-apuestas{
+    display: flex;
+    color: var(--color-secundario);
+    height: 100%;
+}
+.sidebar-apuestas{
+    width: 20%;
+    background-color: var(--color-terceario);
+    height: 100%;
+}
+.sidebar-apuestas h2{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: var(--font-grande);
+}
+.lista-apuestas{
+    list-style-type: none;
+    align-items: center;
+}
+.lista-apuestas li{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.lista-apuestas img{
+    width: 30px;
+    margin-right: 10px;
+}
+.contenedor-apuestas{
+    background-color: var(--color-cuaternario);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-scroll {
+    width: 95%;
+    height: 90%; 
+    padding: 10px;
+    overflow: auto; 
+}
+.grid-apuestas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+.card-apuesta:nth-child(3n+1) {
+    justify-self: start;
+}
+.card-apuesta:nth-child(3n+2) {
+    justify-self: center;
+}
+.card-apuesta:nth-child(3n+3) {
+    justify-self: end;
+}
+
+.card-apuesta{
+    width: 400px;
+    color: var(--color-principal);
+    background-color: var(--color-blanco);
+    font-size: var(--font-grande);
+}
+.card-apuesta div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.card-apuesta img{
+    width: 30px;
+    margin-right: 10px;
+}
+.equipo-apuesta{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-pequeño);
+}
+.equipo-apuesta img{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+}
+.boton-apuesta{
+    padding-right: 120px;
+    padding-left: 120px;
 }
 
 
