@@ -60,7 +60,6 @@ html, body{
     text-decoration: none;
     color: var(--color-principal);
 }
-<<<<<<< HEAD
 .acceder-acceso{
     display: flex;
     justify-content: center;
@@ -83,7 +82,6 @@ html, body{
     text-decoration: none;
     color: var(--color-secundario);
 }
-=======
 .boton-unirse {
     padding: 10px 20px;
     border-radius: 20px;
@@ -104,7 +102,6 @@ html, body{
 
 
 
->>>>>>> a20733e0f4b6e7703ff6686f9a8060447f62eb4f
 .logo-acceso{
     width: 100px;
 }
@@ -173,12 +170,8 @@ html, body{
     justify-content: space-evenly;
     align-items: center; 
 }
-<<<<<<< HEAD
-.titulo-acceso {
-=======
 .header-acceso div {
     text-align: center;
->>>>>>> a20733e0f4b6e7703ff6686f9a8060447f62eb4f
     font-size: var(--font-grande);
 }
 .contenido-acceso div{ 
