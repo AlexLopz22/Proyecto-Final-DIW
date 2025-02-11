@@ -42,7 +42,7 @@ html, body{
     font-size: var(--font-normal);
 }
 .enlace a:hover{
-    font-size: var(--font-grande);
+    text-decoration: underline;
 }
 .enlace-activo {
     color: var(--color-secundario-oscuro);
@@ -69,7 +69,7 @@ html, body{
     display: flex;
     align-items: center;
     color: var(--color-secundario-oscuro);
-    font-size: var(--font-grande);
+    font-size: var(--font-normal);
     text-decoration: none;
 }
 .perfil2 img{
@@ -84,7 +84,7 @@ html, body{
     display: flex;
     align-items: center;
     color: var(--color-secundario);
-    font-size: var(--font-grande);
+    font-size: var(--font-normal);
     text-decoration: none;
 }
 .perfil a:hover{
@@ -135,6 +135,23 @@ html, body{
 .boton-unirse a {
     text-decoration: none;
     color: var(--color-blanco);
+    display: inline-block; /* Permite que el enlace se ajuste al contenido */
+}
+.boton-añadir {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0;
+    width: 50%;
+    margin-top: 10px;
+    background-color: var(--color-blanco);
+    font-size: var(--font-normal);
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.boton-añadir a {
+    text-decoration: none;
+    color: var(--color-principal);
     display: inline-block; /* Permite que el enlace se ajuste al contenido */
 }
 .logo-acceso{
@@ -282,7 +299,7 @@ html, body{
     align-items: center;
     justify-content: center;
 }
-.seccion-scroll {
+.seccion-apuestas {
     width: 95%;
     height: 90%; 
     padding: 10px;
@@ -341,6 +358,8 @@ html, body{
 .contenedor-perfil{
     background-color: var(--color-cuaternario);
     padding: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 .tarjeta-usuario{
     background-color: var(--color-terceario);
@@ -398,6 +417,126 @@ html, body{
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+}
+.contenido-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+}
+.apuestas-perfil{
+    border-radius: 25px;
+    background-color: var(--color-terceario);
+    padding: 5px;
+}
+.titulo-perfil{
+    color: var(--color-secundario);
+    font-size: var(--font-grande);
+    margin-bottom: 10px;
+}
+.tarjeta-apuesta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: var(--color-secundario);
+    border-radius: 25px;
+
+}
+.tarjeta-apuesta div img{
+    width: 70px;
+    margin-right: 20px;
+}
+.izq-apuesta{
+    display: flex;
+    align-items: center;
+}
+.der-apuesta{
+    display: flex;
+    align-items: center;
+}
+.der-apuesta div{
+    margin-left: 20px;
+}
+.amigos-perfil{
+    border-radius: 25px;
+    background-color: var(--color-terceario);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.tarjeta-perfil{
+    width: 10%;
+    height: 90px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: var(--color-secundario);
+    padding: 5px;
+}
+.tarjeta-perfil img{
+    width: 50%;
+}
+
+
+/*Estilo página Perfil*/
+.contenedor-social{
+    color: var(--color-secundario);
+    display: flex;
+}
+.sidebar-social{
+    width: 20%;
+    background-color: var(--color-terceario);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sidebar-social h2{
+    margin-left: 10%;
+    font-size: var(--font-grande);
+}
+.lista-social{
+    list-style-type: none;
+    align-items: center;
+    padding-left: 10%;
+}
+.lista-social li{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+.lista-social img{
+    width: 30px;
+    margin-right: 10px;
+}
+.contenido-social{
+    width: 100%;
+    background-color: var(--color-cuaternario);
+    padding: 20px;
+}
+.contenido-social img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.usuarios-social{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+.tarjeta-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    color: var(--color-blanco);
+    border-radius: 25px;
+}
+.tarjeta-social img{
+    width: 50%;
 }
 
 
