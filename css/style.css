@@ -157,6 +157,21 @@ html, body{
 .logo-acceso{
     width: 100px;
 }
+.menu-movil-oculto{
+    display: none;
+}
+.menu-movil{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.menu-movil img{
+    height: 60%;
+    width: auto; /* Mantener proporciones */
+    max-width: 100%;
+}
 
 
 /*Estilos pagina principal*/
@@ -540,6 +555,56 @@ html, body{
 }
 
 
+/* Estilos pagina desafios*/
+.contenedor-desafios{
+    background-color: var(--color-cuaternario);
+    padding: 50px;
+    display: flex;
+}
+.ranking-desafios{
+    width: 30%;
+}
+.ranking-datos{
+    background-color: var(--color-terceario);
+}
+.ranking-datos table{
+    border: 0;
+    width: 100%;
+    color: var(--color-secundario);
+    padding: 20px;
+    text-align: center;
+}
+.ranking-datos table th{
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.ranking-datos table td hr{
+    border: 1px solid var(--color-secundario);
+}
+.nombre-ranking{
+    text-align: left;
+}
+.top1-ranking{
+    font-size: var(--font-normal);
+    font-weight: bold;
+}
+.desafios{
+    padding-left: 8%;
+    width: 60%;
+}
+.contenido-desafios{
+    background-color: var(--color-terceario);
+    padding: 18px;
+}
+.fila-desafio{
+    display: flex;
+    font-size: var(--font-normal);
+    padding: 2px;
+    color: var(--color-secundario);
+    justify-content: space-between;
+}
+
+
 /*Estilos footer*/
 .footer{
     display: flex;
@@ -604,5 +669,16 @@ html, body{
 @media (max-width:1000px){
     .sidebar-apuestas{
         display: none;
+    }
+    .contenedor-desafios{
+        display:block;
+    }
+    .desafios{
+        padding-left: 0;
+        width: 100%;
+    }
+    .ranking-desafios{
+        width: 100%;
+        padding-bottom: 50px;
     }
 }
