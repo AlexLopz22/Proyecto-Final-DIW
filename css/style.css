@@ -181,10 +181,9 @@ html, body{
     left: 0;
     width: 100%;
     background-color: var(--color-principal);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
     z-index: 1000;
-    
+    box-sizing: border-box;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px); 
@@ -756,5 +755,11 @@ html, body{
     .redes{
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+}
+@media (max-width:500px) {
+    .grid-apuestas{
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 }
