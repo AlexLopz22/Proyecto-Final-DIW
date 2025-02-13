@@ -461,6 +461,7 @@ html, body{
     background-color: var(--color-secundario);
     border-radius: 10px;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
 }
 .contenido-perfil{
@@ -509,8 +510,12 @@ html, body{
     border-radius: 25px;
     background-color: var(--color-terceario);
     padding: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-content: space-between;
+    max-width: 100%;
+    text-align: center;
+    place-items: center;
 }
 .tarjeta-perfil{
     width: 10%;
@@ -522,6 +527,7 @@ html, body{
     border-radius: 25px;
     background-color: var(--color-secundario);
     padding: 5px;
+    min-width: 65px;
 }
 .tarjeta-perfil img{
     width: 50%;
@@ -532,6 +538,7 @@ html, body{
 .contenedor-social{
     color: var(--color-secundario);
     display: flex;
+    width: 100%;
 }
 .sidebar-social{
     width: 20%;
@@ -565,11 +572,14 @@ html, body{
 .contenido-social img{
     width: 100%;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 .usuarios-social{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    width: 100%;
+    max-width: 100%;
 }
 .tarjeta-social{
     display: flex;
@@ -579,9 +589,21 @@ html, body{
     padding: 10px;
     color: var(--color-blanco);
     border-radius: 25px;
+    width: 90%;
 }
 .tarjeta-social img{
     width: 50%;
+}
+.boton-sidebar{
+    top: 15%;
+    position: fixed;
+    background-color: var(--color-principal);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+.boton-sidebar img{
+    width: 50px;
 }
 
 
@@ -695,6 +717,9 @@ html, body{
     .lista-apuestas{
         padding-left: 5%;
     }
+    .apuestas-tarjeta img{
+        width: 30px;
+    }
 }
 @media (max-width:1000px){
     .sidebar-apuestas{
@@ -711,7 +736,12 @@ html, body{
         width: 100%;
         padding-bottom: 50px;
     }
-
+    .sidebar-social{
+        display: none;
+    }
+    .usuarios-social{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 @media (max-width: 800px){
     .menu-movil-oculto{
@@ -741,12 +771,49 @@ html, body{
         width: 90%;
         border-bottom: 200px;
     }
+    .ultima-apuesta{
+        margin-top: 20px;
+    }
     .contenido-perfil{
         width: 100%;
         padding-top: 20px;
     }
+    .amigos-perfil{
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+    .tarjeta-perfil{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .tarjeta-apuesta{
+        font-size: var(--font-pequeño);
+        flex-direction: column;
+        align-items:start;
+    }
+    .der-apuesta div{
+        margin-top: 5px;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .apuestas-tarjeta img{
+        width: 50px;
+    }
 }
-@media (max-width: 700px){
+@media (max-width: 768px) { 
+    .contenedor-perfil {
+        flex-direction: column; /* Para que los elementos estén en columna */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .tarjeta-usuario {
+        width: 100%;  /* Se expande casi al máximo */
+        max-width: 400px; /* No se vuelve demasiado ancha */
+    }
+
+    .contenido-perfil {
+        width: 100%;
+    }
     .footer{
         display: flex;
         flex-direction: column;
@@ -761,5 +828,15 @@ html, body{
     .grid-apuestas{
         grid-template-columns: 1fr;
         justify-content: center;
+    }
+    .usuarios-social{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tarjeta-apuesta div img{
+        width: 30px;
+        margin-right: 10px;
+    }
+    .apuestas-tarjeta img{
+        width: 30px;
     }
 }
