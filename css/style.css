@@ -594,17 +594,6 @@ html, body{
 .tarjeta-social img{
     width: 50%;
 }
-.boton-sidebar{
-    top: 15%;
-    position: fixed;
-    background-color: var(--color-principal);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 20px;
-}
-.boton-sidebar img{
-    width: 50px;
-}
 
 
 /* Estilos pagina desafios*/
