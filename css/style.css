@@ -282,6 +282,10 @@ html, body{
     height: 30px;
     margin-bottom: 20px;
 }
+.contenido-acceso div input[type="date"] {
+    color: var(--color-principal);
+    background-color: var(--color-blanco);
+}
 .contenido-acceso hr{
     border: 0.5px solid var(--color-principal);
     margin-bottom: 20px;
