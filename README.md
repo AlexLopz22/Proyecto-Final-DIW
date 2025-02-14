@@ -2,13 +2,13 @@
 
 ✨ Descripción
 
-Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden realizar apuestas en distintos eventos deportivos de manera segura y eficiente. La aplicación cuenta con un diseño intuitivo y un sistema de pagos seguro.
+Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden realizar apuestas en distintos eventos deportivos de manera segura y eficiente. La aplicación cuenta con un diseño intuitivo y un sistema de pagos seguro.  
 
 🔗 Enlaces
 
 🏡 GitHub Pages: Ver Proyecto en Vivo
 
-🎨 Figma: Diseño del Proyecto
+🎨 Figma: Diseño del Proyecto  
 
 
 
@@ -22,7 +22,7 @@ Integración con pasarelas de pago.
 
 Panel de administración para gestionar eventos y apuestas.
 
-Interfaz responsiva y fácil de usar.
+Interfaz responsiva y fácil de usar.  
 
 
 
