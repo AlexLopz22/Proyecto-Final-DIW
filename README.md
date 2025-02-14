@@ -24,3 +24,22 @@ Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden
 
 - **Frontend**: HTML, CSS, JS
 - **Despliegue**: GitHub Pages
+
+## 🛠 Instalación y Uso
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tuproyecto.git
+   ```
+2. Entrar al directorio del proyecto:
+   ```bash
+   cd tuproyecto
+   ```
+3. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+4. Ejecutar el proyecto en local:
+   ```bash
+   npm start
+   ```
