@@ -1,4 +1,4 @@
-# Proyecto-Final-DIW
+# Casa de Apuestas - Alejandro López Olmedo
 
 
 
@@ -42,4 +42,7 @@ Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden
 4. Ejecutar el proyecto en local:
    ```bash
    npm start
-   ```
+   ```  
+## 📝 Licencia
+
+Este proyecto está bajo la licencia **Creative Commons Atribución 4.0 Internacional (CC BY 4.0)**. Puedes ver más detalles en [este enlace](https://creativecommons.org/licenses/by/4.0/).
