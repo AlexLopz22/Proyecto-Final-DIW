@@ -412,8 +412,10 @@ html, body{
     width: 25%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 .tarjeta-usuario div{
     color: var(--color-secundario);
@@ -511,11 +513,12 @@ html, body{
     background-color: var(--color-terceario);
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     justify-content: space-between;
     max-width: 100%;
     text-align: center;
     place-items: center;
+    gap: 10px;
 }
 .tarjeta-perfil{
     width: 10%;
@@ -731,8 +734,39 @@ html, body{
     .usuarios-social{
         grid-template-columns: repeat(3,1fr);
     }
+    .contenedor-perfil{
+        display: block;
+    }
+    .tarjeta-usuario{
+        width: 100%;
+        border-bottom: 200px;
+        padding: 10px;
+    }
+    .ultima-apuesta{
+        display: none;
+    }
+    .contenido-perfil{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .amigos-perfil{
+        display: none;
+    }
+    .tarjeta-perfil{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .der-apuesta div{
+        display: none;
+    }
+    .apuestas-tarjeta img{
+        width: 50px;
+    }
 }
 @media (max-width: 800px){
+    .contenedor-perfil{
+        padding: 20px;
+    }
     .menu-movil-oculto{
         height: 100%;
         display: flex;
@@ -753,51 +787,14 @@ html, body{
     .contenido-principal {
         left: 50%;
     }
-    .contenedor-perfil{
-        display: block;
-    }
-    .tarjeta-usuario{
-        width: 90%;
-        border-bottom: 200px;
-    }
-    .ultima-apuesta{
-        margin-top: 20px;
-    }
-    .contenido-perfil{
-        width: 100%;
-        padding-top: 20px;
-    }
-    .amigos-perfil{
-        flex-wrap:wrap;
-        justify-content:space-around;
-    }
-    .tarjeta-perfil{
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }
-    .tarjeta-apuesta{
-        font-size: var(--font-pequeño);
-        flex-direction: column;
-        align-items:start;
-    }
-    .der-apuesta div{
-        margin-top: 5px;
-        align-items: center;
-        margin-left: 5px;
-    }
-    .apuestas-tarjeta img{
-        width: 50px;
-    }
+
+   
+
 }
 @media (max-width: 768px) { 
     .contenedor-perfil {
-        flex-direction: column; /* Para que los elementos estén en columna */
-        align-items: center; /* Centra el contenido */
-    }
-
-    .tarjeta-usuario {
-        width: 100%;  /* Se expande casi al máximo */
-        max-width: 400px; /* No se vuelve demasiado ancha */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .contenido-perfil {
@@ -812,8 +809,17 @@ html, body{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .contenedor-acceso{
+        width: 80%;
+        height: 80%;
+    }
 }
 @media (max-width:500px) {
+    .tarjeta-apuesta{
+        font-size: var(--font-pequeño);
+        flex-direction: column;
+        align-items:start;
+    }
     .grid-apuestas{
         grid-template-columns: 1fr;
         justify-content: center;
