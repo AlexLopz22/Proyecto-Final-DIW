@@ -29,11 +29,11 @@ Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuproyecto.git
+   git clone https://github.com/AlexLopz22/Proyecto-Final-DIW.git
    ```
 2. Entrar al directorio del proyecto:
    ```bash
-   cd tuproyecto
+   cd Proyecto-Final-DIW
    ```
 3. Instalar dependencias:
    ```bash
