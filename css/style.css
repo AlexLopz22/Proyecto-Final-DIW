@@ -256,7 +256,8 @@ html, body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 450px;
+    min-height: 700px;
+    min-width: 300px;
 }
 .contenido-acceso{
     width: 80%;
