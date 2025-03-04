@@ -1,15 +1,35 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById("menu-enlaces2");
     const botonMenu = document.getElementById("boton-menu");
     const botonesApuestas = document.getElementById("botones-apuestas");
     const finalPagina = document.getElementById("final-pagina");
+    const botonFuturista = document.getElementById("boton-futurista");
+    const ventanaSoporte = document.getElementById("ventana-ia");
+
+    if (botonFuturista && ventanaSoporte) {
+        botonFuturista.addEventListener("click", function () {
+            event.preventDefault();
+            if (ventanaSoporte.style.display === 'none' || ventanaSoporte.style.display === '') {
+                ventanaSoporte.style.display = 'block';  
+                setTimeout(() => {
+                    ventanaSoporte.classList.add('visible');  
+                }, 10);  
+            } else {
+                ventanaSoporte.classList.remove('visible');  
+                setTimeout(() => {
+                    ventanaSoporte.style.display = 'none';  
+                }, 500); 
+            }
+        });
+    }
+
 
     if (menu && botonMenu) {
-        botonMenu.addEventListener("click", function() {
+        botonMenu.addEventListener("click", function () {
             menu.classList.toggle("mostrar");
         });
 
-        document.addEventListener("click", function(event) {
+        document.addEventListener("click", function (event) {
             if (!menu.contains(event.target) && event.target !== botonMenu) {
                 menu.classList.remove("mostrar");
             }
@@ -20,10 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
                 botonesApuestas.style.position = 'absolute';
-                botonesApuestas.style.right = '10px';
+                botonesApuestas.style.right = '2%';
+                botonesApuestas.style.bottom = '30px';
             } else {
                 botonesApuestas.style.position = 'fixed';
-                botonesApuestas.style.right = '40px';
+                botonesApuestas.style.right = '3%';
             }
         });
 

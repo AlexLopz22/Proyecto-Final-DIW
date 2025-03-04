@@ -24,9 +24,10 @@
         <div class="acceso">
             <div class="perfil">
                 <a href="./perfil.html">
-                    <img src="../img/usuario-icono.png" alt="Usuario icono"><div>Usuario<br>20.00€</div>
+                    <img src="../img/usuario-icono.png" alt="Usuario icono">
+                    <div>Usuario<br>20.00€</div>
                 </a>
-            </div>
+            </div>       
         </div>
         <div class="menu-movil-oculto">
             <img src="../img/menu-movil-icono.png" alt="Menú móvil" id="boton-menu">
@@ -153,17 +154,20 @@
                             <div>Apuesta mínima: 2€</div>
                             <div><div class="boton-apuesta"><div class="boton-unirse"><a href="#">Unirse</a></div></div></div>  
                         </div>
-                        <div class="card-apuesta">
-                            <div><img src="../img/futbol-logo.png" alt="Balón de Fútbol">Fútbol</div>
-                            <div>23-02</div>
-                            <div><div class="equipo-apuesta"><img src="../img/camiseta-icono-azul.png" alt="Camiseta Azul"><p>Man. City</p></div> - <div class="equipo-apuesta"><img src="../img/camiseta-icono-rojo.png" alt="Camiseta Roja"><p>Liverpool</p></div></div>
-                            <div>Apuesta mínima: 2€</div>
-                            <div><div class="boton-apuesta"><div class="boton-unirse"><a href="#">Unirse</a></div></div></div>  
-                        </div>
                     </div>
                     <div class="botones-apuestas" id="botones-apuestas">
-                        <a href="#"><img src="../img/mas-icono.png" alt="Botón de apuesta"></a>
-                        <a href="#"><img src="../img/mas-icono.png" alt="Botón de apuesta"></a>
+                        <div class="ventana-ia" id="ventana-ia" style="display: none;">
+                            <div class="ia-mensaje">
+                                <img src="../img/balon-futurista-icono.jpg" alt="Futurista icono">
+                                <div>¡Bienvenido a nuestra IA! Estamos aquí para ayudarte con todas las apuestas que desees realizar. <b>¿En qué tipo de apuesta te gustaría recibir asistencia?</b></div>
+                            </div>
+                            <div class="user-mensaje">
+                                <input type="text" name="mensaje" id="mensaje">
+                                <div class="enviar"><a href="#"><img src="../img/enviar-icono.png" alt="Enviar icono"></a></div>
+                            </div>
+                        </div>
+                        <a href="#" class="boton-futurista" id="boton-futurista"><img src="../img/balon-futurista-icono.jpg" alt="Botón de apuesta"></a>
+                        <a href="#" class="boton-mas"><img src="../img/mas-icono.png" alt="Botón de apuesta"></a>
                     </div>
                 </div>
                 
@@ -208,5 +212,7 @@
             <p>Chat Online</p>
         </div>
     </div>
+
+    
 </body>
 </html>
