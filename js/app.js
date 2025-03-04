@@ -4,30 +4,29 @@ document.addEventListener("DOMContentLoaded", function() {
     const botonesApuestas = document.getElementById("botones-apuestas");
     const finalPagina = document.getElementById("final-pagina");
 
-    // Observar si el final de la página es visible
-    const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            botonesApuestas.style.position = 'absolute';
-            botonesApuestas.style.right = '10px';
-        } else {
-            botonesApuestas.style.position = 'fixed';
-            botonesApuestas.style.right = '40px';
-        }
-    });
+    if (menu && botonMenu) {
+        botonMenu.addEventListener("click", function() {
+            menu.classList.toggle("mostrar");
+        });
 
-    observer.observe(finalPagina);
+        document.addEventListener("click", function(event) {
+            if (!menu.contains(event.target) && event.target !== botonMenu) {
+                menu.classList.remove("mostrar");
+            }
+        });
+    }
 
-    botonMenu.addEventListener("click", function() {
-        if (menu.classList.contains("mostrar")) {
-            menu.classList.remove("mostrar");
-        } else {
-            menu.classList.add("mostrar");
-        }
-    });
+    if (botonesApuestas && finalPagina) {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                botonesApuestas.style.position = 'absolute';
+                botonesApuestas.style.right = '10px';
+            } else {
+                botonesApuestas.style.position = 'fixed';
+                botonesApuestas.style.right = '40px';
+            }
+        });
 
-    document.addEventListener("click", function(event) {
-        if (!menu.contains(event.target) && event.target !== botonMenu) {
-            menu.classList.remove("mostrar");
-        }
-    });
+        observer.observe(finalPagina);
+    }
 });
