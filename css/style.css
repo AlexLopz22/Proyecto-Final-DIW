@@ -348,12 +348,37 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
+.botones-apuestas {
+    position: fixed;
+    bottom: 20px; /* Pega el elemento al fondo cuando hagas scroll */
+    right: 40px; /* Pega el elemento al extremo derecho */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    display: flex; /* Si tienes varios botones y quieres alinearlos horizontalmente */
+    gap: 10px;
+    flex-direction: column;
+    height: 100px;
+}
+.botones-apuestas a{
+    background-color: var(--color-secundario);
+    border-radius: 50px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+.botones-apuestas a img{
+    width: 30px;
+    height: 30px;
+}
+
 .seccion-apuestas {
+    position: relative; /* No es obligatorio, pero asegura el contexto */
     width: 95%;
     height: 90%; 
     padding: 10px;
 }
+
 .grid-apuestas{
     min-width: 350px;
     display: grid;
