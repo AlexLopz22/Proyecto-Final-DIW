@@ -5,20 +5,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const finalPagina = document.getElementById("final-pagina");
     const botonFuturista = document.getElementById("boton-futurista");
     const ventanaSoporte = document.getElementById("ventana-ia");
+    const botonesUnirse = document.querySelectorAll('.boton-unirse');
+
+    botonesUnirse.forEach(boton => {
+        boton.addEventListener('click', function (event) {
+            console.log("click");
+            event.preventDefault();
+            const card = this.closest('.card-apuesta');
+            card.classList.toggle('unido');
+        });
+    });
+
 
     if (botonFuturista && ventanaSoporte) {
         botonFuturista.addEventListener("click", function () {
             event.preventDefault();
             if (ventanaSoporte.style.display === 'none' || ventanaSoporte.style.display === '') {
-                ventanaSoporte.style.display = 'block';  
+                ventanaSoporte.style.display = 'block';
                 setTimeout(() => {
-                    ventanaSoporte.classList.add('visible');  
-                }, 10);  
+                    ventanaSoporte.classList.add('visible');
+                }, 10);
             } else {
-                ventanaSoporte.classList.remove('visible');  
+                ventanaSoporte.classList.remove('visible');
                 setTimeout(() => {
-                    ventanaSoporte.style.display = 'none';  
-                }, 500); 
+                    ventanaSoporte.style.display = 'none';
+                }, 500);
             }
         });
     }
@@ -51,3 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(finalPagina);
     }
 });
+
+window.onload = function () {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('contenedor');
+    setTimeout(function () {
+        loader.classList.add('hidden');
+        setTimeout(function () {
+            loader.style.display = 'none';
+            content.style.display = 'block';
+        }, 500);
+    }, 1000);
+};
