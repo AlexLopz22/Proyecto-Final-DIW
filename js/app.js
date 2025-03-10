@@ -18,22 +18,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     if (botonFuturista && ventanaSoporte) {
-        botonFuturista.addEventListener("click", function () {
+        botonFuturista.addEventListener("click", function (event) {
             event.preventDefault();
-            if (ventanaSoporte.style.display === 'none' || ventanaSoporte.style.display === '') {
-                ventanaSoporte.style.display = 'block';
+            if (ventanaSoporte.style.visibility === 'hidden' || ventanaSoporte.style.visibility === '') {
+                ventanaSoporte.style.visibility = 'visible';
+                ventanaSoporte.style.opacity = '1';
+                ventanaSoporte.style.transform = 'translateY(0)';
                 setTimeout(() => {
                     ventanaSoporte.classList.add('visible');
                 }, 10);
             } else {
                 ventanaSoporte.classList.remove('visible');
+                ventanaSoporte.style.opacity = '0';
+                ventanaSoporte.style.transform = 'translateY(10px)';
                 setTimeout(() => {
-                    ventanaSoporte.style.display = 'none';
+                    ventanaSoporte.style.visibility = 'hidden';
                 }, 500);
             }
         });
     }
-
+    
 
     if (menu && botonMenu) {
         botonMenu.addEventListener("click", function () {
