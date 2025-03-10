@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="../js/app.js" defer></script>
+    <link href="../src/output.css" rel="stylesheet">
 </head>
 <body>
     <div id="loader" class="loader-container">
@@ -157,23 +158,18 @@
                             <div>Apuesta mínima: 2€</div>
                             <div><div class="boton-apuesta"><div class="boton-unirse"><a href="#">Unirse</a></div></div></div>  
                         </div>
-                        <div class="card-apuesta">
-                            <div><img src="../img/futbol-logo.png" alt="Balón de Fútbol">Fútbol</div>
-                            <div>23-02</div>
-                            <div><div class="equipo-apuesta"><img src="../img/camiseta-icono-azul.png" alt="Camiseta Azul"><p>Man. City</p></div> - <div class="equipo-apuesta"><img src="../img/camiseta-icono-rojo.png" alt="Camiseta Roja"><p>Liverpool</p></div></div>
-                            <div>Apuesta mínima: 2€</div>
-                            <div><div class="boton-apuesta"><div class="boton-unirse"><a href="#">Unirse</a></div></div></div>  
-                        </div>
                     </div>
                     <div class="botones-apuestas" id="botones-apuestas">
-                        <div class="ventana-ia" id="ventana-ia" style="display: none;">
-                            <div class="ia-mensaje">
-                                <img src="../img/balon-futurista-icono.jpg" alt="Futurista icono">
-                                <div>¡Bienvenido a nuestra IA! Estamos aquí para ayudarte con todas las apuestas que desees realizar. <b>¿En qué tipo de apuesta te gustaría recibir asistencia?</b></div>
+                        <div class="absolute bottom-32 right-[3%] rounded-xl p-2.5 shadow-lg z-10 w-2xs" id="ventana-ia" style="background-color: var(--color-blanco); border: 1px solid var(--color-secundario); display: none; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; ">
+                            <div class="flex justify-between gap-1 mb-5" style="font-size: var(--font-enano);color: var(--color-principal);">
+                                <img src="../img/balon-futurista-icono.jpg" alt="Futurista icono" class="w-10 h-10">
+                                <div class="w-full p-1 rounded-md" style="border: 1px solid var(--color-cuaternario);">¡Bienvenido a nuestra IA! Estamos aquí para ayudarte con todas las apuestas que desees realizar. <b>¿En qué tipo de apuesta te gustaría recibir asistencia?</b></div>
                             </div>
-                            <div class="user-mensaje">
-                                <input type="text" name="mensaje" id="mensaje">
-                                <div class="enviar"><a href="#"><img src="../img/enviar-icono.png" alt="Enviar icono"></a></div>
+                            <div class="flex justify-between gap-1">
+                                <input type="text" name="mensaje" id="mensaje" style="background-color: white; border: 1px solid var(--color-cuaternario);">
+                                <div class="flex items-center">
+                                    <a href="#" class="flex items-center justify-center"><img class="w-5 h-5" src="../img/enviar-icono.png" alt="Enviar icono"></a>
+                                </div>
                             </div>
                         </div>
                         <a href="#" class="boton-futurista" id="boton-futurista"><img src="../img/balon-futurista-icono.png" alt="Botón de apuesta"></a>
