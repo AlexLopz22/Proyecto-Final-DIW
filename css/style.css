@@ -173,7 +173,7 @@ html, body{
 }
 .boton-unirse a {
     text-decoration: none;
-    color: var(--color-blanco);
+    color: var(--color-principal);
     display: inline-block; 
 }
 .boton-unirse a:hover{
@@ -578,7 +578,7 @@ html, body{
     padding: 5px;
 }
 .titulo-perfil{
-    color: var(--color-secundario);
+    color: var(--color-blanco);
     font-size: var(--font-grande);
     margin-bottom: 10px;
 }
@@ -690,7 +690,7 @@ html, body{
     align-items: center;
     background-color: var(--color-secundario);
     padding: 10px;
-    color: var(--color-blanco);
+    color: var(--color-principal);
     border-radius: 25px;
     width: 90%;
 }
@@ -714,7 +714,7 @@ html, body{
 .ranking-datos table{
     border: 0;
     width: 100%;
-    color: var(--color-secundario);
+    color: var(--color-blanco);
     padding: 20px;
     text-align: center;
 }
@@ -723,7 +723,7 @@ html, body{
     padding-bottom: 10px;
 }
 .ranking-datos table td hr{
-    border: 1px solid var(--color-secundario);
+    border: 1px solid var(--color-blanco);
 }
 .nombre-ranking{
     text-align: left;
@@ -744,7 +744,7 @@ html, body{
     display: flex;
     font-size: var(--font-normal);
     padding: 2px;
-    color: var(--color-secundario);
+    color: var(--color-blanco);
     justify-content: space-between;
 }
 
