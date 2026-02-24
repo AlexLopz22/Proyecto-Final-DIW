@@ -8,9 +8,9 @@ Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden
 
 ## 🔗 Enlaces
 
-- 🏡 **GitHub Pages**: [Ver Proyecto en Vivo](https://alexlopz22.github.io/Proyecto-Final-DIW/)
-- 🎨 **Figma**: [Diseño del Proyecto](https://www.figma.com/design/k1iZMCXhPB8Wx1IJG3hMjz/Proyecto-Final-DIW?node-id=0-1&t=OncVvrd67VGrQGiX-1)
-- 📚 **Repositorio**: [GitHub](https://github.com/AlexLopz22/Proyecto-Final-DIW)
+- **GitHub Pages**: [Ver Proyecto en Vivo](https://alexlopz22.github.io/Proyecto-Final-DIW/)
+- **Figma**: [Diseño del Proyecto](https://www.figma.com/design/k1iZMCXhPB8Wx1IJG3hMjz/Proyecto-Final-DIW?node-id=0-1&t=OncVvrd67VGrQGiX-1)
+- **Repositorio**: [GitHub](https://github.com/AlexLopz22/Proyecto-Final-DIW)
 
 ## ⚡ Características Principales
 
@@ -20,12 +20,12 @@ Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden
 - Panel de administración para gestionar eventos y apuestas.
 - Interfaz responsiva y fácil de usar.
 
-## 🌟 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Frontend**: HTML, CSS, JS
 - **Despliegue**: GitHub Pages
 
-## 🛠 Instalación y Uso
+## Instalación y Uso
 
 1. Clonar el repositorio:
    ```bash
@@ -43,6 +43,3 @@ Este es un proyecto de una casa de apuestas en línea, donde los usuarios pueden
    ```bash
    npm start
    ```  
-## 📝 Licencia
-
-Este proyecto está bajo la licencia **Creative Commons Atribución 4.0 Internacional (CC BY 4.0)**. Puedes ver más detalles en [este enlace](https://creativecommons.org/licenses/by/4.0/).
